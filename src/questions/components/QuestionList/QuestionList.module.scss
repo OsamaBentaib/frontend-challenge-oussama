@@ -1,0 +1,33 @@
+.questions{
+
+    .questions_list{
+        display: grid;
+        flex-direction: row;
+        grid-row-gap:    20px;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+
+        .question_card{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+            transition: all 0.3s ease-in-out;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            &:hover{
+                box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+            }
+
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+
+
+        }
+    }
+}
